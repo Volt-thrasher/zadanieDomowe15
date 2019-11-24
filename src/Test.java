@@ -9,7 +9,7 @@ public class Test {
     private static String[] printMonths() {
         Scanner input = new Scanner(System.in);
         Season season = null;
-        switch (input.nextLine()){
+        switch (input.nextLine()) {
             case "Zima":
                 season = Season.WINTER;
                 break;
@@ -22,7 +22,8 @@ public class Test {
             case "Jesien":
                 season = Season.AUTUMN;
                 break;
-            default: input.close();
+            default:
+                input.close();
         }
         return season.getMonths();
     }

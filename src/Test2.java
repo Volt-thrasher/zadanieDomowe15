@@ -11,8 +11,8 @@ public class Test2 {
         System.out.println("Wprowadz nazwe pory roku");
         String line = input.nextLine();
         String[] months = null;
-        for (Season s:Season.values()) {
-            if (line.equals(s.getName())){
+        for (Season s : Season.values()) {
+            if (line.equals(s.getName())) {
                 months = s.getMonths();
             }
         }
