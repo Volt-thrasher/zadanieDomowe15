@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        printMonths();
+        System.out.println(Arrays.toString(printMonths()));
     }
 
-    private static void printMonths() {
+    private static String[] printMonths() {
         Scanner input = new Scanner(System.in);
         Season season = null;
         switch (input.nextLine()){
@@ -24,6 +24,6 @@ public class Test {
                 break;
             default: input.close();
         }
-        System.out.println(Arrays.toString(season.getMonths()));
+        return season.getMonths();
     }
 }
